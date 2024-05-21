@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<!-- Name: John O'Neal
+	 Date: 04/12/2023
+	 Updated: 04/12/2023
+	 Desc: A single page e-commerce storefront for Gravebuster Games.
+	 Color Scheme and colors used: Analogous: Blue - #75F9EE, Teal - #67DBB1, Main Green - #7EF2A7, Light Green - #67DB6F,  Yellow Green - #98F975
+	 Target Audience: Customers who like to buy games online.
+-->
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Welcome to Gravebuster Games, your one-stop destination for all your video game needs! We are an online retailer that offers a wide selection of video games for all major platforms, including Xbox, PlayStation, Nintendo, and PC. Our selection of video games includes everything from action and adventure to sports and racing. We also offer a variety of gaming accessories, such as controllers, headsets, and charging stations, to enhance your gaming experience.">
+	<meta name="keywords"
+		content="video games, online retailer, Xbox, PlayStation, Nintendo, PC, multiplayer, action, adventure, sports, racing, gaming accessories, controllers, headsets, charging stations, customer service, fast shipping, reliable, selection, prices, shopping experience">
+	<link rel="icon" href="../media/images/favicon.ico" type="image/x-icon">
+	<!-- source: https://icon-library.com/icon/game-controller-folder-icon-2.html -->
+	<link rel="stylesheet" type="text/css" href="../css/screen_style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../css/print_style.css" media="print">
+	<!-- box icons -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<title>Gravebuster Games | Home</title>
+</head>
+
+<body>
+	<!-- ----------header section---------- -->
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<img src="../media/images/reaper.jpg" alt="Gravebuster Games Logo">
+					<!-- image source: <a href="https://www.freepik.com/free-vector/grim-reaper-concept-illustration_38321919.htm#query=reaper&position=0&from_view=search&track=sph#position=0&query=reaper">Image by storyset</a> on Freepik -->
+				</div>
+				<h1>Gravebuster <br> Games</h1>
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#products">Products</a>
+							<ul>
+								<li><a href="#products">Featured Products</li>
+								<li><a href="#latest-products">Latest Products</li>
+							</ul>
+						</li>
+						<li><a href="#testimonials">Testimonials</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<img src="../media/images/menu-regular-36.png" class="menu-icon" onclick="menutoggle()" alt="">
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<h1>Welcome to the store!</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, aspernatur magni. Illo eos
+						asperiores velit?</p>
+					<a href="" class="btn">Explore Now &#8594;</a>
+				</div>
+				<div class="col-2">
+					<img src="../media/images/hero.png" alt="Video game consols and controller">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ----------featured catagories section---------- -->
+	<div class="catagories">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-3">
+					<img src="../media/images/ps5.png" alt="sony playstation 5">
+					<!-- image source https://www.playstation.com/en-us/ps5/ -->
+				</div>
+				<div class="col-3">
+					<img src="../media/images/switch.jpg" alt="nintendo switch">
+					<!-- image source: https://prisguiden.no/produkt/nintendo-switch-oled-505255 -->
+				</div>
+				<div class="col-3">
+					<img src="../media/images/xbox.png" alt="microsoft xbox series s">
+					<!-- image source: https://www.microsoft.com/en-us/d/xbox-series-s/942j774tp9jn?activetab=pivot:overviewtab -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ----------featured products section---------- -->
+	<div class="small-container" id="products">
+		<h2 class="title">Featured Products</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="../media/images/product1.jpg"
+					alt="The Legend of Zelda: Tears of the Kingdom - Nintendo Switch">
+				<!-- image source: https://www.gamestop.com/video-games/nintendo-switch/products/the-legend-of-zelda-tears-of-the-kingdom---nintendo-switch/351955.html -->
+				<h4>The Legend of Zelda: Tears of the Kingdom - Nintendo Switch</h4>
+				<div class="rating">
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star-half'></i>
+				</div>
+				<p>$69.99</p>
+			</div>
+			<div class="col-4">
+				<img src="../media/images/product2.png" alt="Grand Theft Auto V Premium - Xbox One">
+				<!-- image source: https://www.gamestop.com/video-games/products/grand-theft-auto-v-premium-edition---xbox-one/167066.html -->
+				<h4>Grand Theft Auto V Premium - Xbox One</h4>
+				<div class="rating">
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star-half'></i>
+					<i class='bx bx-star'></i>
+				</div>
+				<p>$19.99</p>
+			</div>
+			<div class="col-4">
+				<img src="../media/images/product3.png" alt="Resident Evil 4 - PlayStation 5">
+				<!-- image source: https://www.gamestop.com/video-games/products/resident-evil-4---playstation-5/391500.html -->
+				<h4>Resident Evil 4 - PlayStation 5</h4>
+				<div class="rating">
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star'></i>
+					<i class='bx bx-star'></i>
+				</div>
+				<p>$54.99</p>
+			</div>
+			<div class="col-4">
+				<img src="../media/images/product4.png" alt="New Super Mario Bros U Deluxe - Nintendo Switch">
+				<!-- image source: https://www.gamestop.com/video-games/nintendo-switch/products/new-super-mario-bros-u-deluxe---nintendo-switch/187834.html -->
+				<h4>New Super Mario Bros U Deluxe - Nintendo Switch</h4>
+				<div class="rating">
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star'></i>
+				</div>
+				<p>$37.99</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- ----------latest products section---------- -->
+	<h2 class="title" id="latest-products">Latest Products</h2>
+	<div class="row">
+		<div class="col-4">
+			<img src="../media/images/product5.jpg" alt="Hogwarts Legacy Deluxe Edition - Nintendo Switch">
+			<!-- image source: https://www.gamestop.com/video-games/products/hogwarts-legacy-deluxe-edition---nintendo-switch/351072.html -->
+			<h4>Hogwarts Legacy Deluxe Edition - Nintendo Switch</h4>
+			<div class="rating">
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star-half'></i>
+			</div>
+			<p>$69.99</p>
+		</div>
+		<div class="col-4">
+			<img src="../media/images/product6.png" alt="Animal Crossing: New Horizons - Nintendo Switch">
+			<!-- image source: https://www.gamestop.com/video-games/nintendo-switch/products/animal-crossing-new-horizons---nintendo-switch/212275.html -->
+			<h4>Animal Crossing: New Horizons - Nintendo Switch</h4>
+			<div class="rating">
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star-half'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<p>$54.99</p>
+		</div>
+		<div class="col-4">
+			<img src="../media/images/product7.jpg" alt="Fortnite 13,500 V-Bucks">
+			<!-- image source: https://www.gamestop.com/pc-gaming/pc-games/products/fortnite-13500-v-bucks/321781.html -->
+			<h4>Fortnite 13,500 V-Bucks</h4>
+			<div class="rating">
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<p>$79.99</p>
+		</div>
+		<div class="col-4">
+			<img src="../media/images/product8.jpg" alt="Apex Legends 11,500 Coins">
+			<!-- image source: https://www.gamestop.com/gift-cards/products/apex-legends-11500-coins/191882.html -->
+			<h4>Apex Legends 11,500 Coins</h4>
+			<div class="rating">
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+			</div>
+			<p>$99.99</p>
+		</div>
+		<div class="col-4">
+			<img src="../media/images/product9.jpg" alt="Microsoft Xbox Series X Wireless Controller Carbon Black">
+			<!-- image source: https://www.gamestop.com/gaming-accessories/controllers/products/microsoft-xbox-series-x-wireless-controller-carbon-black/229092.html -->
+			<h4>Microsoft Xbox Series X Wireless Controller Carbon Black</h4>
+			<div class="rating">
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star-half'></i>
+			</div>
+			<p>$44.49</p>
+		</div>
+		<div class="col-4">
+			<img src="../media/images/product10.jpg" alt="Nintendo Switch Joy-Con (L)/(R) Neon Purple/Orange">
+			<!-- image source: https://www.gamestop.com/gaming-accessories/controllers/nintendo-switch/products/nintendo-switch-joy-con-l-r-neon-purple-orange/204613.html -->
+			<h4>Nintendo Switch Joy-Con (L)/(R) Neon Purple/Orange</h4>
+			<div class="rating">
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star-half'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<p>$65.00</p>
+		</div>
+		<div class="col-4">
+			<img src="../media/images/product11.jpg" alt="Sony DualSense Edge Wireless Controller for PlayStation 5">
+			<!-- image source: https://www.gamestop.com/gaming-accessories/controllers/playstation-5/products/sony-dualsense-edge-wireless-controller-for-playstation-5/359710.html -->
+			<h4>Sony DualSense Edge Wireless Controller for PlayStation 5</h4>
+			<div class="rating">
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<p>$199.99</p>
+		</div>
+		<div class="col-4">
+			<img src="../media/images/product12.png" alt="Call of Duty: Modern Warfare II - PlayStation 5">
+			<!-- image source: https://www.gamestop.com/video-games/products/call-of-duty-modern-warfare-ii---playstation-5/349162.html-->
+			<h4>Call of Duty: Modern Warfare II - PlayStation 5</h4>
+			<div class="rating">
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+				<i class='bx bxs-star'></i>
+			</div>
+			<p>$64.99</p>
+		</div>
+	</div>
+
+	<!-- ----------special offer section---------- -->
+	<div class="offer">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-2">
+					<img src="../media/images/reaper.jpg" class="offer-img" alt="Gravebuster Games Logo">
+				</div>
+				<div class="col-2">
+					<p>EXCLUSIVE OFFER!</p>
+					<h1>Gravebuster Sticker</h1>
+					<small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+					<a href="" class="btn">Buy Now &#8594;</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ----------testimonial section---------- -->
+	<div class="testimonial" id="testimonials">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-3">
+					<i class='bx bxs-quote-left'></i>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, itaque? Nobis eius
+						itaque
+						sunt ipsa?</p>
+					<div class="rating">
+						<i class='bx bxs-star'></i>
+						<i class='bx bxs-star'></i>
+						<i class='bx bxs-star'></i>
+						<i class='bx bxs-star'></i>
+						<i class='bx bxs-star'></i>
+					</div>
+					<img src="../media/images/testimonial1.jpg" alt="Image of woman">
+					<!-- image source: <a href="https://www.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_9117255.htm#query=headshot&position=8&from_view=search&track=sph">Image by cookie_studio</a> on Freepik -->
+					<h3>Jane Doe</h3>
+				</div>
+				<div class="col-3">
+					<i class='bx bxs-quote-left'></i>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, itaque? Nobis eius
+						itaque
+						sunt ipsa?</p>
+					<div class="rating">
+						<i class='bx bxs-star'></i>
+						<i class='bx bxs-star'></i>
+						<i class='bx bxs-star'></i>
+						<i class='bx bxs-star'></i>
+						<i class='bx bxs-star'></i>
+					</div>
+					<img src="../media/images/testimonial2.jpg" alt="Image of man">
+					<!-- image source <a href="https://www.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_17830501.htm#query=headshot&position=18&from_view=search&track=sph">Image by rawpixel.com</a> on Freepik -->
+					<h3>James Smith</h3>
+				</div>
+				<div class="col-3">
+					<i class='bx bxs-quote-left'></i>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, itaque? Nobis eius
+						itaque
+						sunt ipsa?</p>
+					<div class="rating">
+						<i class='bx bxs-star'></i>
+						<i class='bx bxs-star'></i>
+						<i class='bx bxs-star'></i>
+						<i class='bx bxs-star'></i>
+						<i class='bx bxs-star'></i>
+					</div>
+					<img src="../media/images/testimonial3.jpg" alt="Image of man">
+					<!-- image source <a href="https://www.freepik.com/free-photo/young-bearded-man-with-striped-shirt_9660042.htm#query=headshot&position=22&from_view=search&track=sph">Image by wayhomestudio</a> on Freepik-->
+					<h3>John Doe</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ----------audio/visual/iframe section---------- -->
+	<div class="container">
+		<h2 class="title">The Legend of Zelda: Breath of the Wild Review</h2>
+		<video width="100%" controls>
+			<source src="../media/videos/review.mp4" type="video/mp4">
+			<!-- video source: https://www.youtube.com/watch?v=r5S8yTb_QNU -->
+			Your browser does not support the video tag.
+		</video>
+	</div>
+
+	<div class="container">
+		<h2 class="title">Audio Version</h2>
+		<audio controls>
+			<source src="../media/sounds/audioreview.mp3" type="audio/mpeg">
+			<!-- audio source: https://www.youtube.com/watch?v=r5S8yTb_QNU -->
+			Your browser does not support the audio tag.
+		</audio>
+	</div>
+
+	<div class="container">
+		<h2 class="title">Our Partner Company</h2>
+		<iframe src="inevitable-index.html" frameborder="0"></iframe>
+	</div>
+
+	<!-- ----------form section---------- -->
+	<div class="contact" id="contact">
+		<h2 class="title">Contact Us!</h2>
+		<div class="small-container">
+			<form method="post" name="contactForm" id="contactForm" action="#">
+				<label for="nameTb">Name: </label>
+				<input type="text" name="nameTb" id="nameTb" required placeholder="Full Name" tabindex="1"
+					accesskey="N">
+
+				<label for="emailTb">Email: </label>
+				<input type="email" name="emailTb" id="emailTb" required placeholder="Email Address" tabindex="2"
+					accesskey="E">
+
+				<label for="countryTb">Country Code: </label>
+				<input type="number" name="countryTb" id="countryTb" min="1" required placeholder="1" tabindex="3"
+					accesskey="O">
+
+				<label for="phoneTb">Phone: </label>
+				<input type="tel" name="phoneTb" id="phoneTb" required placeholder="Phone Number" tabindex="4"
+					accesskey="P">
+
+				<label for="select">Preferred Contact: </label>
+				<select name="select" id="select" tabindex="5" accesskey="S">
+					<option value="Email">Email</option>
+					<option value="Text">Text</option>
+					<option value="Phone-Call">Phone Call</option>
+				</select>
+
+				<label for="requestD1">Category: </label>
+				<input type="text" list="request" id="requestDl" name="requestDl" tabindex="6" accesskey="T">
+				<datalist id="request">
+					<option value="Orders"></option>
+					<option value="Returns"></option>
+					<option value="Customer Service"></option>
+					<option value="General Question"></option>
+					<option value="Other"></option>
+				</datalist>
+
+				<label for="satisfaction">Urgency: </label>
+				<input type="range" name="satisfaction" id="satisfaction" min="1" max="10" tabindex="7"
+					accesskey="R"></label>
+
+				<label for="coments">Comments: </label>
+				<textarea name="comments" id="comments" cols="40" rows="2" placeholder="Enter your comments here"
+					tabindex="8" accesskey="B"></textarea>
+
+				<input type="submit" value="Send Message" class="btn" tabindex="9" accesskey="M">
+			</form>
+		</div>
+	</div>
+
+	<!-- ----------footer section---------- -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Visit our Store</h3>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, incidunt!</p>
+					<div class="map">
+						<img src="../media/images/map.png" alt="Map of the store location">
+						<!-- image source: google maps -->
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="../media/images/reaper.jpg" alt="Gravebuster Games Logo">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ratione, qui accusantium
+						delectus
+						dolorum ipsum!</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful links</h3>
+					<ul>
+						<li>Deals</li>
+						<li>Blog</li>
+						<li>Return Policy</li>
+						<li>Wholesale</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>Youtube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">&copy Copyright 2023 | John O'Neal</p>
+		</div>
+	</div>
+
+	<!-- ----------js for toggle menu---------- -->
+	<script>
+		var MenuItems = document.getElementById("MenuItems")
+
+		MenuItems.style.maxHeight = "0px"
+
+		function menutoggle() {
+			if (MenuItems.style.maxHeight == "0px") {
+				MenuItems.style.maxHeight = "200px"
+			}
+			else {
+				MenuItems.style.maxHeight = "0px"
+			}
+		}
+	</script>
+</body>
+
+</html>
